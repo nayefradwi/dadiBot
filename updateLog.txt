@@ -1,0 +1,15 @@
+update V0.1.1
+-----------------------
+
+[NEW COMMANDS]:
+oni - make dadi say onii-chan (requested by: 1 user)
+
+
+;
+update V0.1.0
+-----------------------
+
+created an only developers command that allows the bot to tag everyone and push whatever update I put
+
+;
+
