@@ -1,9 +1,34 @@
+update V0.1.2
+-----------------------
+
+[NEW COMMANDS]:
+...
+
+[COMMAND UPDATES]:
+.....
+
+[NEW FEATURES]:
+- help command is now clearer
+
+[BUG FIXES]
+- I now only type when I have to
+
+;
+
 update V0.1.1
 -----------------------
 
 [NEW COMMANDS]:
 oni - make dadi say onii-chan (requested by: 1 user)
+aww - ahh my heart
+meme - I bet i can make you laugh **wink**
 
+[COMMAND UPDATES]:
+joke {category} - I can make you laugh using "dark" or "programming" jokes
+
+[NEW FEATURES]:
+- I can finally type!
+- I send better error messages, I think...
 
 ;
 update V0.1.0

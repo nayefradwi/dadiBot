@@ -1,14 +1,16 @@
 from discord.ext import commands
-from .handlers.cute_commands_handlers import seal_image_handler
+from .handlers.reddit import reddit_handler
 class CuteCommands(commands.Cog):
 
   def __init__(self, bot):
     self.bot = bot
+    self.redditHandler = reddit_handler.RedditHandler()
   
   @commands.command()
   async def aww(self, ctx):
-    response = await seal_image_handler.get_seal()
-    await ctx.send("under construction")
+    async with ctx.typing():
+      response = await self.redditHandler.get_seal()
+    await ctx.send(response)
     
   @commands.command()
   async def oni(self, ctx):

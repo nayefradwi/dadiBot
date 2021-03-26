@@ -10,9 +10,12 @@ dadi = os.getenv('dadi')
 
 # setting up commands
 bot = commands.Bot(command_prefix="dadi ")
+bot.remove_command('help')
 funny_commands.setup(bot)
 cute_commands.setup(bot)
 dev_commands.setup(bot)
+
+
 
 # bot access prefrences
 intents = discord.Intents.default()
@@ -27,10 +30,11 @@ async def on_ready():
 
 # handling non command messages
 @bot.event
-async def on_message(nessage):
-  response = await mh.handleMessage(nessage, dadi)
-  if response == None:
-    await bot.process_commands(nessage)
+async def on_message(message):
+    if message.author != bot.user:
+        response = await mh.handleMessage(message, dadi)
+        if response == None:
+            await bot.process_commands(message)
 
 keep_alive()
 bot.run(os.getenv('TOKEN'))

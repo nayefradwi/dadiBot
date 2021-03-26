@@ -1,0 +1,30 @@
+انت ليش تبي تفهم؟
+
+okay ya nigga you have to say:
+  
+  dadi {command} [arguments]
+
+example:
+  dadi joke dark
+
+Funny commands:
+---------------
+  joke [category]:
+    category arguments: programming or dark
+    default argument: dark
+    description: I sends a joke يعني شنو بسوي
+  
+  meme:
+    description: sends a meme
+
+Cute commands:
+--------------
+  oni:
+    description: I send back onii-chan
+  
+  aww:
+    description: you will get to see the most beautiful thing
+  
+  i love you:
+    description: meow
+
